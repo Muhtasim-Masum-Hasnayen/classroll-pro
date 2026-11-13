@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ClassRoll Pro | Smart Attendance for Teachers</title>
+<meta name="description" content="ClassRoll Pro: card-based attendance app for teachers. Bangla and English, Excel import, reports, works on mobile and desktop.">
+<meta name="theme-color" content="#0e5fd8">
+<meta property="og:title" content="ClassRoll Pro">
+<meta property="og:description" content="Take attendance in one tap per student.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="w hd">
+<div class="logo"><i>✓</i>ClassRoll Pro</div>
+<nav><a href="#features" data-i="n1"></a><a href="#try" data-i="n2"></a><a href="#pricing" data-i="n3"></a></nav>
+<div class="seg" id="lang"><button data-l="en" class="on">EN</button><button data-l="bn">বাং</button></div>
+<button class="ib" id="th" aria-label="theme">◐</button>
+<button class="btn sm" id="auth"></button>
+</div></header>
+
+<main class="w">
+<div class="hero">
+<div>
+<h1><span data-i="h1"></span> <em data-i="h2"></em></h1>
+<p data-i="hp"></p>
+<div class="row"><a href="#try" class="btn" style="text-decoration:none" data-i="cta1"></a><button class="btn g" id="cta2" data-i="cta2"></button></div>
+</div>
+<div class="phone"><div class="mini"><div class="ph">N</div><b>Nusrat Jahan</b><small>Roll 02 · 8-A</small><div class="mb"><span style="background:#16a34a">Present</span><span style="background:#dc2626">Absent</span></div></div></div>
+</div>
+
+<section id="features">
+<h2 data-i="ft"></h2><p class="sub" data-i="fs"></p>
+<div class="grid" id="fg"></div>
+</section>
+
+<section id="try">
+<h2 data-i="tt"></h2><p class="sub" data-i="ts"></p>
+<div class="app">
+<div class="gb" id="gb"><span data-i="gm"></span><button class="btn sm" id="gl" data-i="login"></button></div>
+<div class="tabs" id="tabs"><button data-t="att" class="on"></button><button data-t="stu"></button><button data-t="rep"></button></div>
+<div class="pad" id="view"></div>
+</div>
+</section>
+
+<section id="pricing">
+<h2 data-i="pt"></h2><p class="sub" data-i="ps"></p>
+<div class="pr">
+<div class="f"><h3 data-i="p1"></h3><div class="pc">৳0</div><span data-i="p1d"></span></div>
+<div class="f hot"><h3 data-i="p2"></h3><div class="pc" data-i="p2p"></div><span data-i="p2d"></span></div>
+<div class="f"><h3 data-i="p3"></h3><div class="pc" data-i="p3p"></div><span data-i="p3d"></span></div>
+</div>
+</section>
+</main>
+<footer>© ClassRoll Pro · <span data-i="ft2"></span></footer>
+
+<div class="mod" id="pm"><div class="mc" id="pc"></div></div>
+<div class="mod" id="am"><div class="mc">
+<h3 style="margin:0 0 4px" data-i="login"></h3><p class="sub" style="margin:0 0 10px;font-size:14px" data-i="lm"></p>
+<input type="email" id="em" placeholder="Email"><input type="password" id="pw" placeholder="Password (min 6)">
+<div id="ae" style="color:var(--bad);font-size:14px"></div>
+<div class="row" style="margin-top:10px"><button class="btn" id="ago" data-i="go"></button><button class="btn g" id="ax" data-i="cancel"></button></div>
+</div></div>
+<div id="toast"></div>
+<input type="file" id="xf" accept=".xlsx,.xls,.csv" hidden>
+<input type="file" id="pf" accept="image/*" hidden>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
